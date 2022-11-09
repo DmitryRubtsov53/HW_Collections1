@@ -15,7 +15,7 @@ public class Driver <C extends Transport & Competing> {
 
     public void setLicense(String license) {
         this.license = license;
-    }
+    }     // сделать проверки !!!
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
@@ -41,9 +41,7 @@ public class Driver <C extends Transport & Competing> {
 
     @Override
     public String toString() {
-        return fullName + ", " +
-                ", категория " + license + ", стаж " + experience +
-                " лет.";
+        return fullName + ", категория " + license + ", стаж " + experience +" лет.";
     }
 } // class
 

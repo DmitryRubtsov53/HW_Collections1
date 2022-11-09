@@ -23,7 +23,7 @@ public class Sponsor {
     }
 // setters ______________________________________________________________________________________________
 
-    public void setSponsorName(String sponsorName) {
+    public void setSponsorName(String sponsorName) {          // сделать проверки !!!
         this.sponsorName = sponsorName;
     }
 

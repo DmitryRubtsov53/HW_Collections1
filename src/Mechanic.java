@@ -18,7 +18,7 @@ public class Mechanic <T extends Transport> {
     }
 
 // setters ______________________________________________________________________________________________
-    public void setMechanicName(String mechanicName) {
+    public void setMechanicName(String mechanicName) {             // сделать проверки !!!
         this.mechanicName = mechanicName;
     }
     public void setCompany(String company) {
