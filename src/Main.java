@@ -1,5 +1,5 @@
 import java.util.List;
-
+import SuperMarket.Kassa;
 public class Main {
     public static void main(String[] args) {
 
@@ -67,6 +67,10 @@ public class Main {
 
 //        testAuto(audi,bmw,hyundai,kraz,maz,paz,gazon);
 //        System.out.println();
+
+// Касса -----------------------------------------------------------------------------
+    int a; a = Kassa.sizeQueue();
+        System.out.println(a);
 
     } // main
 
