@@ -22,6 +22,7 @@ public class Chess {
             biDemArrList.add(i, new ArrayList<>());
             for (int j = 0; j < 8; j++) {
                if ((i + j) % 2 != 0) {
+                   biDemArrList.get(i).add(j, "●");
                   //  biDemArrList.get(i).add(j, (i+j)%2 == 1 ? "●" : "◯"); - вариант Бизина.
                } else biDemArrList.get(i).add(j, "◯");
             }
