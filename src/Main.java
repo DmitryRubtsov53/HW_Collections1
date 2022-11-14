@@ -1,4 +1,6 @@
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,10 +44,20 @@ public class Main {
         kamaz.addDriver(svan); kamaz.addMechanic(egor); kamaz.addSponsor(rusagro);
 
         liaz.addDriver(semen); liaz.addMechanic(oleg);liaz.addSponsor(ufaNet);
-
+// Списки ----------------------------------------------------------------------------------------
         List <Transport> transports = List.of ( audi,kia,bmw,hyundai,
                                                 kamaz,maz,kraz,gaz,
                                                 nefaz,paz,liaz,gazon);
+        List <Driver> drivers = List.of ( ivan, semen, svan );
+        List<Mechanic> mechanics = List.of(boris,egor,oleg);
+        List<Sponsor> sponsors = List.of(bashNeft, ufaNet, rusagro);
+
+// Перевёл List в Set - т. о. создал множества, в которые невозможно добавить одинаковые элементы :
+        Set<Transport> transportSet = new HashSet<Transport>(transports); // Перевёл List в Set
+        Set<Driver> driverSet = new HashSet<Driver>(drivers);
+        Set<Mechanic> mechanicSet = new HashSet<Mechanic>(mechanics);
+        Set<Sponsor> sponsorSet = new HashSet<Sponsor>(sponsors);
+
 
         printInfoMashin(audi);   // инфо о водителе, спонсорах и механниках.
         printInfoMashin(kamaz);
